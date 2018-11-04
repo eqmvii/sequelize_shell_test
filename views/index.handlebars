@@ -1,3 +1,8 @@
 <h1>Welcome to the Sequelize Demo App</h1>
 <p>Please enjoy your stay!</p>
-<p>Here is an object key: {{ test }}</p>
+<h2>Users from the 'ol DB':</h2>
+<ul>
+    {{#each users}}
+    <li>email: {{this.email}} PW: {{this.password}}</li>
+    {{/each}}
+</ul>
